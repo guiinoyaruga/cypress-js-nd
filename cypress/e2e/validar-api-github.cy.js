@@ -5,7 +5,7 @@ describe('GitHub API', () => {
     const randomText = faker.lorem.lines(1)
     const randomTextTitle = faker.lorem.lines(1)
     const randomTextBody = faker.lorem.lines(1)
-    let idIssue = 0
+    let issueId = 0
 
     it('Deve ser possivel criar um repositorio no Github', () => {
         cy.env(['github_token', 'api_url'])
@@ -67,7 +67,7 @@ describe('GitHub API', () => {
                     }
                 }).then((response) => {
                     expect(response.status).to.equal(201)
-                    idIssue = response.body.number
+                    issueId = response.body.number
                 })
             })
     });
