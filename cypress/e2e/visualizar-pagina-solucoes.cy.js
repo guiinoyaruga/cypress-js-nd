@@ -1,6 +1,6 @@
 const { homePageEl } = require('../support/pages/home-page/elements');
-const  solutionPage  = require('../support/pages/solutions-page/methods');
-const solutionMethod = new solutionPage.solutionMethod()
+const solutionPage = require('../support/pages/solutions-page/methods');
+const solutionsMethod = new solutionPage.solutionMethod()
 
 describe('Pagina de soluções', () => {
 
@@ -13,6 +13,6 @@ describe('Pagina de soluções', () => {
       .should('be.visible')
       .scrollIntoView({easing: 'linear', duration: 200})
     
-    solutionMethod.validateNavigateSolutionPage()
+    solutionsMethod.validateNavigateSolutionPage()
   })
 })
