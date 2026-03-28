@@ -1,4 +1,5 @@
 export const homePageEl = {
+    inicialSection: '.elementor-element-ff522e7',
     menuSuperior: '.elementor-element-fe789c4',
     sectionText: '.elementor-element-f43ef10 > .elementor-widget-container > .elementor-heading-title',
     findMoreBtn: '.elementor-element-bdbb258 > .elementor-widget-container > .elementor-button-wrapper > .elementor-button',
