@@ -1,11 +1,13 @@
+const { homePageEl } = require ('../support/pages/home-page/elements')
+
 describe('Página inicial', () => {
   beforeEach(() => {
-    cy.visit('https://nexdom.tec.br/')
+    cy.visit('/')
   });
 
   it('Deve ser possível visualizar a pagina inicial e seus elementos principais', () => {
     //topo da pagina
-    cy.get('.elementor-element-fe789c4')
+    cy.get(homePageEl.menuSuperior)
       .should('contain', 'Home')
       .and('contain', 'Sobre nós')
       .and('contain', 'Soluções')
@@ -13,27 +15,27 @@ describe('Página inicial', () => {
       .and('contain', 'Contato')
       .and('be.visible')
 
-    cy.get('.elementor-element-f43ef10 > .elementor-widget-container > .elementor-heading-title')
+    cy.get(homePageEl.sectionText)
       .contains('h2','Promovemos inovação e qualidade na gestão de planos de saúde do Sistema Unimed por meio da convergência e integração de tecnologias.')
       .and('be.visible')
 
-    cy.get('.elementor-element-bdbb258 > .elementor-widget-container > .elementor-button-wrapper > .elementor-button')
+    cy.get(homePageEl.findMoreBtn)
       .contains('span','Saiba mais')
       .should('be.visible')
 
     //big numbers
-    cy.get('.elementor-element-517b9ff')
+    cy.get(homePageEl.bigNumbersSection)
       .scrollIntoView()
       .click()
 
-    cy.get('.elementor-element-9d40fa3')
+    cy.get(homePageEl.bigNumberSquares)
       .should('contain', '130')
       .and('contain', '6.5')
       .and('contain', '20')
       .and('contain', '26')
 
     //video a respeita da empresa
-    cy.get('.elementor-element-85dfd0b')
+    cy.get(homePageEl.videoSection)
       .scrollIntoView()
       .within(()=>{
         cy.get('#widget2')
@@ -42,53 +44,53 @@ describe('Página inicial', () => {
       })
 
     //Conheça nossas solucoes
-    cy.get('.elementor-element-d45613e')
+    cy.get(homePageEl.solutionsSection)
       .scrollIntoView()
       .contains('Conheça nossas soluções')
       .should('be.visible')
     
-    cy.get('.elementor-element-8837b4c')
+    cy.get(homePageEl.manageHealthPlanDiv)
       .contains('Gestão de planos de saúde')
       .should('be.visible')
 
-    cy.get('.elementor-element-bdf3c6d')
+    cy.get(homePageEl.authorizationAndServiceDiv)
       .contains('Autorização e Atendimento')
       .should('be.visible')
 
-    cy.get('.elementor-element-f1abbfd')
+    cy.get(homePageEl.susDiv)
       .contains('Ressarcimento ao SUS')
       .should('be.visible')
 
-    cy.get('.elementor-element-50b506d')
+    cy.get(homePageEl.companyPortalDiv)
       .contains('Portal da empresa e beneficiário')
       .should('be.visible')
 
-    cy.get('.elementor-element-281b24e')
+    cy.get(homePageEl.manageRelationshipDiv)
       .contains('Gestão de relacionamento e Ouvidoria')
       .should('be.visible')
 
-    cy.get('.elementor-element-d355456')
+    cy.get(homePageEl.businessIntelligenceDiv)
       .contains('Business Intelligence')
       .should('be.visible')
 
     //diferenciais
-    cy.get('.elementor-element-18459e3')
+    cy.get(homePageEl.differencesSection)
       .scrollIntoView()
       .contains('Ser referência em tecnologia para a gestão da saúde.')
       .should('be.visible')
 
     //proposito
-    cy.get('.elementor-element-5fde86f')
+    cy.get(homePageEl.purposeSection)
       .scrollIntoView()
       .contains('Levamos você ao próximo nível')
       .should('be.visible')
 
-    cy.get('.elementor-element-22ee8c0 > .elementor-widget-container > .elementor-button-wrapper > .elementor-button')
+    cy.get(homePageEl.findMoreBtnPurposeSection)
       .should('contain', 'Saiba mais')
       .and('be.visible')
 
     //footer
-    cy.get('.elementor-element-166cc7c')
+    cy.get(homePageEl.footerSection)
       .scrollIntoView()
       .should('be.visible')
   })
