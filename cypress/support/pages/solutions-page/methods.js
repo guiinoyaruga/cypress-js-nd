@@ -35,7 +35,7 @@ const typeSolutions =
     ]
 
 class Solutions {
-    validateNavigateSolutionPage() {
+    validateNavigateSolutionsPage() {
         typeSolutions.forEach((type) => {
             cy.wait(500)
 

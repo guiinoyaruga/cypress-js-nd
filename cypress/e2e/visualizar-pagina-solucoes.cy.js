@@ -13,6 +13,6 @@ describe('Pagina de soluções', () => {
       .should('be.visible')
       .scrollIntoView({easing: 'linear', duration: 200})
     
-    solutionsMethod.validateNavigateSolutionPage()
+    solutionsMethod.validateNavigateSolutionsPage()
   })
 })
