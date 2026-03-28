@@ -77,7 +77,7 @@ describe('GitHub API', () => {
             .then(({ github_token, api_url }) => {
                 cy.request({
                     method: 'GET',
-                    url: `${api_url}/repos/guiinoyaruga/repository-${randomNumber}/issues/${idIssue}`,
+                    url: `${api_url}/repos/guiinoyaruga/repository-${randomNumber}/issues/${issueId}`,
                     headers: {
                         Authorization: `Bearer ${github_token}`,
                         Accept: 'application/vnd.github+json'
