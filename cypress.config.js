@@ -4,6 +4,8 @@ module.exports = defineConfig({
   allowCypressEnv: false,
 
   e2e: {
+    baseUrl: 'https://nexdom.tec.br/',
+    
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
@@ -11,5 +13,5 @@ module.exports = defineConfig({
   viewportWidth: 1280,
   viewportHeight: 800,
   watchForFileChanges: false,
-  defaultCommandTimeout: 10000
+  defaultCommandTimeout: 10000,
 });

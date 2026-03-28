@@ -2,5 +2,8 @@
   "devDependencies": {
     "@faker-js/faker": "^10.4.0",
     "cypress": "^15.13.0"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.15.0"
   }
 }
