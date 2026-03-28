@@ -49,6 +49,6 @@ class Solutions {
     }
 }
 
-module.exports ={
+module.exports = {
     solutionMethod: Solutions
 }

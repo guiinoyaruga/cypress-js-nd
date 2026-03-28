@@ -12,7 +12,6 @@ describe('Pagina de soluções', () => {
     cy.get(homePageEl.footerSection)
       .should('be.visible')
       .scrollIntoView({easing: 'linear', duration: 200})
-
     
     solutionMethod.validateNavigateSolutionPage()
   })
