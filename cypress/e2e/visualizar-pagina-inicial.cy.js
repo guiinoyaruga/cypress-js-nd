@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('Página inicial', () => {
   beforeEach(() => {
     cy.visit('https://nexdom.tec.br/')
   });
