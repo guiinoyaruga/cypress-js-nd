@@ -10,4 +10,3 @@ export const contactPageEl = {
     submitFormBtn: '.elementor-field-type-submit > .elementor-button'
 }
 
-
