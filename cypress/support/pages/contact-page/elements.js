@@ -9,4 +9,3 @@ export const contactPageEl = {
     checkboxTermsForm: '.elementor-field-option',
     submitFormBtn: '.elementor-field-type-submit > .elementor-button'
 }
-
