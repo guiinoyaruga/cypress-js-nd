@@ -1,6 +1,7 @@
-const { homePageEl } = require('../support/pages/home-page/elements');
 const solutionPage = require('../support/pages/solutions-page/methods');
 const solutionsMethod = new solutionPage.solutionMethod()
+const homePage = require('../support/pages/home-page/methods');
+const homeMethods = new homePage.homeMethods()
 
 describe('Pagina de soluções', () => {
 
@@ -9,9 +10,7 @@ describe('Pagina de soluções', () => {
   });
 
   it('Deve ser possível navegar pela página de soluções', () => {
-    cy.get(homePageEl.footerSection)
-      .should('be.visible')
-      .scrollIntoView({easing: 'linear', duration: 200})
+    homeMethods.viewFooterSection()
     
     solutionsMethod.validateNavigateSolutionsPage()
   })
