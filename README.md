@@ -25,7 +25,7 @@ Algumas características existentes neste projeto:
 - Separação de testes por tag utilizando GrepTags.
 
 ## Instalação
-Após clonar o projeto, utilize o comando abaixo para começar.
+Após clonar o projeto, utilize o comando abaixo para instalar as dependências do projeto.
 
 
 ```bash
