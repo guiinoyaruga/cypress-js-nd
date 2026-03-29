@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 const { plugin: cypressGrepPlugin } = require('@cypress/grep/plugin')
 
 module.exports = defineConfig({
-  allowCypressEnv: true,
+  allowCypressEnv: false,
 
   env:{
       github_token: "",
