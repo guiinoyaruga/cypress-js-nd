@@ -14,15 +14,13 @@
 
 </p>
 
-## cypress-js-nd
+## CYPRESS-JS-ND
 Projeto voltado para testes E2E do site da NEXCOM, contendo testes de UI e de API.
 
 ## Visão geral
 Algumas características existentes neste projeto:
-- Possui integração com a ferramenta Qase para criação de test run automatizados.
-- Possui um pipeline de desenvolvimento, integrado com GitHub Actions.
 - Scripts criados em JavaScript.
-- Possui integração com Cypress Cloud ativa.
+- Uso da biblioteca <strong>FakerJS</strong> para geração de dados aleatórios
 - Separação de testes por tag utilizando GrepTags.
 
 ## Instalação
