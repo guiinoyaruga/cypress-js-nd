@@ -25,7 +25,7 @@ Algumas características existentes neste projeto:
 - Separação de testes por tag utilizando GrepTags.
 
 ## Instalação
-Clone o projeto clicando no botão <button><> Code</button> e copie o link para um CLI (Sublime merge ou similar) ou digite no terminal o comando abaixo junto do link do repositório:
+Clone o projeto clicando no botão <strong><> Code</strong> e copie o link para um CLI (Sublime merge ou similar) ou digite no terminal o comando abaixo junto do link do repositório:
 
 ```bash
 git clone link_do_repositorio
@@ -66,4 +66,4 @@ npx cypress run
 npx cypress run --expose grepTags="@sua_tag_aqui"
 ```
 > [!TIP]
-> Existe um arquivo json com o nome tags, contendo as tags existentes para consulta
+> Existe um arquivo json com o nome <strong>tags</strong>, contendo as tags existentes para consulta
