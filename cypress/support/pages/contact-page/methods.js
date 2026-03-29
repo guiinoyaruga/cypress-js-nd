@@ -23,11 +23,11 @@ class ContactPage {
             cy.root().find(contactPageEl.inputSubjectForm).type(subject).should('have.value', subject)
 
             cy.get(contactPageEl.checkboxTermsForm)
-                .should('contain', 'Li e aceito os termos de uso')
-                .children()
-                .first()
-                .check()
-                .should('be.checked')
+              .should('contain', 'Li e aceito os termos de uso')
+              .children()
+              .first()
+              .check()
+              .should('be.checked')
         })
 
     }
