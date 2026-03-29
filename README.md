@@ -36,7 +36,7 @@ npm install
 Para teste de API, é necessário adicionar o auth token da conta do GitHub. Na pasta raiz do projeto, abra o arquivo cypress.config.js e adicione o token do GitHub na sessão:
 
 ```bash
-github_token: "seu_token_aqui",
+github_token: "seu_token_aqui"
 ```
 
 ## Iniciando o projeto
