@@ -9,7 +9,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
   <br>
-  <img src="https://img.shields.io/badge/Node-v22-green">
+  <img src="https://img.shields.io/badge/Node-v24-green">
   <img src="https://img.shields.io/badge/Cypress-15.13-darkgreen">
 
 </p>
