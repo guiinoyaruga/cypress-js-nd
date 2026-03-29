@@ -19,8 +19,9 @@ Projeto voltado para testes E2E do site da NEXCOM, contendo testes de UI e de AP
 
 ## Visão geral
 Algumas características existentes neste projeto:
-- Scripts criados em JavaScript.
-- Uso da biblioteca <strong>FakerJS</strong> para geração de dados aleatórios
+- Scripts criados na linguagem JavaScript.
+- Design de código utilizando PageObject.
+- Uso da biblioteca <strong>FakerJS</strong> para geração de dados aleatórios.
 - Separação de testes por tag utilizando GrepTags.
 
 ## Instalação
