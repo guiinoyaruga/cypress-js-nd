@@ -25,7 +25,13 @@ Algumas características existentes neste projeto:
 - Separação de testes por tag utilizando GrepTags.
 
 ## Instalação
-Após clonar o projeto, utilize o comando abaixo para instalar as dependências do projeto.
+Clone o projeto clicando no botão <button><> Code</button> e copie o link para um CLI (Sublime merge ou similar) ou digite no terminal o comando abaixo junto do link do repositório:
+
+```bash
+git clone link_do_repositorio
+```
+
+Após clonar o projeto, utilize o comando abaixo para instalar as dependências do projeto:
 
 
 ```bash

@@ -4,6 +4,7 @@ const baseUrl = Cypress.config('baseUrl')
 
 class ContactPage {
     openContactPage(){
+      //método com objetivo de acessar a página de contato pelo menu superior
         cy.get(homePageEl.menuSuperior)
           .contains('Contato')
           .click()
@@ -12,6 +13,7 @@ class ContactPage {
     }
 
     fillContactForm(name, email, company, job, phone, subject) {
+      //método que tem como objetivo o preenchimento do formulário
         cy.get(contactPageEl.contactForm)
           .should('be.visible')
           .within(() => {
@@ -33,6 +35,7 @@ class ContactPage {
     }
 
     submitContactForm() {
+      // método com objetivo de validar o envio do formulário preenchido
         cy.intercept('POST', `${baseUrl}/wp-admin/admin-ajax.php`)
           .as('submitForm')
 

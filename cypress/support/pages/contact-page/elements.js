@@ -1,4 +1,5 @@
 export const contactPageEl = {
+    // elementos referente a section contendo o formulário
     contactForm: '.elementor-form-fields-wrapper',
     inputNameForm: '[name="form_fields[name]"]',
     inputEmailForm: '[name="form_fields[email]"]',
