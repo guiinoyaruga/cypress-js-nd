@@ -21,6 +21,8 @@ module.exports = defineConfig({
   viewportHeight: 800,
   watchForFileChanges: false,
   defaultCommandTimeout: 10000,
+  video: true,
+  videoCompression: true,
   expose: {
     grepFilterSpecs: true
   },
