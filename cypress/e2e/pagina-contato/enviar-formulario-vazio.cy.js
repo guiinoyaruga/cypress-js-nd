@@ -1,6 +1,6 @@
-const { homePageEl } = require('../support/pages/home-page/elements')
-const { contactPageEl } = require('../support/pages/contact-page/elements')
-const contactPage = require('../support/pages/contact-page/methods');
+const { homePageEl } = require('../../support/pages/home-page/elements')
+const { contactPageEl } = require('../../support/pages/contact-page/elements')
+const contactPage = require('../../support/pages/contact-page/methods');
 const contactMethod = new contactPage.contactMethods()
 
 describe('Pagina de contato', () => { 
@@ -9,7 +9,7 @@ describe('Pagina de contato', () => {
     cy.visit('/')
   });
 
-  it('Deve ser possível enviar o formulário preenchido com sucesso', () => {
+  it('SC-02 - Deve ser possível enviar o formulário preenchido com sucesso', () => {
     cy.get(homePageEl.inicialSection)
       .should('be.visible')
     

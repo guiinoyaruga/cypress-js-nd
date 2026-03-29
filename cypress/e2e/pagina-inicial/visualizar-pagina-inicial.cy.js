@@ -1,5 +1,4 @@
-const { homePageEl } = require ('../support/pages/home-page/elements')
-const homePage = require('../support/pages/home-page/methods');
+const homePage = require('../../support/pages/home-page/methods');
 const homeMethods = new homePage.homeMethods()
 
 describe('Página inicial', () => {
@@ -7,7 +6,7 @@ describe('Página inicial', () => {
     cy.visit('/')
   });
 
-  it('Deve ser possível visualizar a pagina inicial e seus elementos principais', () => {
+  it('HP-01 - Deve ser possível visualizar a pagina inicial e seus elementos principais', () => {
     //Verifica a primeira section da página
     homeMethods.viewFirstSection()
 
