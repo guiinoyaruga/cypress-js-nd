@@ -3,7 +3,7 @@ const { homePageEl } = require('../../support/pages/home-page/elements')
 const contactPage = require('../../support/pages/contact-page/methods');
 const contactMethod = new contactPage.contactMethods()
 
-describe('Pagina de contato', () => {
+describe('Pagina de contato', {tags: '@contact-page'}, () => {
     const randomName = faker.person.fullName()
     const randomEmail = faker.internet.email()
     const randomCompany = faker.person.jobArea()

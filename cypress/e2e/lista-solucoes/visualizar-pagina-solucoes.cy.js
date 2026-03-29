@@ -3,7 +3,7 @@ const solutionsMethod = new solutionPage.solutionMethod()
 const homePage = require('../../support/pages/home-page/methods');
 const homeMethods = new homePage.homeMethods()
 
-describe('Pagina de soluções', () => {
+describe('Pagina de soluções', {tags: '@solutions-page'}, () => {
 
   beforeEach(() => {
     cy.visit('/')

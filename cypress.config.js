@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+const { plugin: cypressGrepPlugin } = require('@cypress/grep/plugin')
 
 module.exports = defineConfig({
   allowCypressEnv: true,
@@ -12,10 +13,15 @@ module.exports = defineConfig({
     baseUrl: 'https://nexdom.tec.br/',
     
     setupNodeEvents(on, config) {
+      cypressGrepPlugin(config)
+      return config
     },
   },
   viewportWidth: 1280,
   viewportHeight: 800,
   watchForFileChanges: false,
   defaultCommandTimeout: 10000,
+  expose: {
+    grepFilterSpecs: true
+  },
 });

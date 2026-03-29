@@ -1,6 +1,6 @@
 import { fakerPT_BR as faker } from '@faker-js/faker'
 
-describe('GitHub API', () => {
+describe('GitHub API', {tags: '@github-api'}, () => {
     const randomNumber = faker.string.numeric(6)
     const randomText = faker.lorem.lines(1)
     const randomTextTitle = faker.lorem.lines(1)

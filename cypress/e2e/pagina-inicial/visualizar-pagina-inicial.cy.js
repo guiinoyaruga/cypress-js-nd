@@ -1,7 +1,7 @@
 const homePage = require('../../support/pages/home-page/methods');
 const homeMethods = new homePage.homeMethods()
 
-describe('Página inicial', () => {
+describe('Página inicial', {tags: '@home-page'}, () => {
   beforeEach(() => {
     cy.visit('/')
   });
@@ -22,10 +22,10 @@ describe('Página inicial', () => {
     //Verifica a section relacionada aos diferenciais da empresa
     homeMethods.viewDifferencesSection()
 
-    //Verifica a section relacionada ao proposito da empresa
+    //Verifica a section relacionada ao propósito da empresa
     homeMethods.viewPurposeSection()
 
-    //Verifica o rodapé da pagina
+    //Verifica o rodapé da página
     homeMethods.viewFooterSection()
   })
 })
