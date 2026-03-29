@@ -7,7 +7,7 @@ describe('GitHub API', () => {
     const randomTextBody = faker.lorem.lines(1)
     let issueId = 0
 
-    it('Deve ser possivel criar um repositorio no Github', () => {
+    it('GH-01 - Deve ser possivel criar um repositorio no Github', () => {
         cy.env(['github_token', 'api_url'])
             .then(({ github_token, api_url }) => {
                 cy.request({
@@ -28,7 +28,7 @@ describe('GitHub API', () => {
             })
     });
 
-    it('Deve ser possivel pesquisar por um repositório já criado no Github', () => {
+    it('GH-02 - Deve ser possivel pesquisar por um repositório já criado no Github', () => {
         cy.env(['github_token', 'api_url'])
             .then(({ github_token, api_url }) => {
                 cy.request({
@@ -51,7 +51,7 @@ describe('GitHub API', () => {
             })
     });
 
-    it('Deve ser possivel criar uma issue em um repositório do Github', () => {
+    it('GH-03 - Deve ser possivel criar uma issue em um repositório do Github', () => {
         cy.env(['github_token', 'api_url'])
             .then(({ github_token, api_url }) => {
                 cy.request({
@@ -72,7 +72,7 @@ describe('GitHub API', () => {
             })
     });
 
-    it('Deve ser possivel buscar por uma issue em um repositório do Github', () => {
+    it('GH-04 - Deve ser possivel buscar por uma issue em um repositório do Github', () => {
         cy.env(['github_token', 'api_url'])
             .then(({ github_token, api_url }) => {
                 cy.request({
@@ -93,7 +93,7 @@ describe('GitHub API', () => {
             })
     });
 
-    it('Deve ser possivel deletar um repositório do Github', () => {
+    it('GH-05 - Deve ser possivel deletar um repositório do Github', () => {
         cy.env(['github_token', 'api_url'])
             .then(({ github_token, api_url }) => {
                 cy.request({
@@ -109,7 +109,7 @@ describe('GitHub API', () => {
             })
     });
 
-    it('Não deve ser possivel visualizar o repositório deletado no Github', () => {
+    it('GH-06 - Não deve ser possivel visualizar o repositório deletado no Github', () => {
         cy.env(['github_token', 'api_url'])
             .then(({ github_token, api_url }) => {
                 cy.request({
