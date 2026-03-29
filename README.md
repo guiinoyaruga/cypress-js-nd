@@ -54,7 +54,7 @@ npx cypress run
 ```
 
 ## Iniciando testes por meio de tags
-É possível rodar teste ou um conjunto de teste por meio de tags. Adicione o comando abaixo, adicionando o termo "@tag" referente a tag desejada:
+É possível rodar um teste ou um conjunto de testes por meio de tags. Adicione o comando abaixo, informando a tag desejada com termo "@sua_tag_aqui"
 
 ```bash
 npx cypress run --expose grepTags="@tag"
