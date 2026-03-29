@@ -15,7 +15,7 @@
 </p>
 
 ## CYPRESS-JS-ND
-Projeto voltado para testes E2E do site da NEXCOM, contendo testes de UI e de API.
+Projeto voltado para testes E2E contendo testes de UI e de API.
 
 ## Visão geral
 Algumas características existentes neste projeto:
