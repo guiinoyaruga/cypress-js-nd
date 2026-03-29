@@ -15,7 +15,7 @@
 </p>
 
 ## CYPRESS-JS-ND
-Projeto voltado para testes E2E contendo testes de UI e de API.
+Projeto voltado para testes E2E e de API.
 
 ## Visão geral
 Algumas características existentes neste projeto:
@@ -25,13 +25,18 @@ Algumas características existentes neste projeto:
 - Separação de testes por tag utilizando GrepTags.
 
 ## Instalação
-[![npm version](https://badge.fury.io/js/cypress.svg)](https://badge.fury.io/js/cypress)
-
 Após clonar o projeto, utilize o comando abaixo para começar.
 
 
 ```bash
 npm install
+```
+
+## Preparando o ambiente
+Para teste de API, é necessário adicionar o auth token da conta do GitHub. Na pasta raiz do projeto, abra o arquivo cypress.config.js e adicione o token do GitHub na sessão:
+
+```bash
+github_token: "seu_token_aqui",
 ```
 
 ## Iniciando o projeto
