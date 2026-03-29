@@ -59,5 +59,5 @@ npx cypress run
 ```bash
 npx cypress run --expose grepTags="@sua_tag_aqui"
 ```
-> [!TIP]
+> [!Dica]
 > Existe um arquivo json com o nome tags, contendo as tags existentes para consulta
